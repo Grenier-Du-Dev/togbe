@@ -7,7 +7,7 @@ You can then do whatever you want with the json data, either send to another ser
 
 # How to run
 Clone or fork and clone the project.
-Install rust ([From rust-lang.org](https://github.com/Speykious/cve-rs/blob/main/LICENSE)).
+Install rust ([From rust-lang.org](https://www.rust-lang.org/tools/install)).
 From the root directory, run 
 ```
 cargo run
