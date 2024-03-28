@@ -29,7 +29,7 @@ pub async fn insert_page_content(url: &str, _depth: i32, content: &str) {
     let file_name = s1 + &s2 + &s3;
 
     if let Ok(current_dir) = env::current_dir() {
-        let data_dir_name = "src/outpout";
+        let data_dir_name = "src/output";
         let data_dir_path = current_dir.join(data_dir_name);
         if !data_dir_path.exists() {
             fs::create_dir(&data_dir_path).expect("Failed to create data directory");
