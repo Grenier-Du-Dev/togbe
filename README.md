@@ -15,6 +15,3 @@ cargo run
 
 # Project goals and non-goals:
 N/A
-
-# Licence
-[GLWTSPL](https://github.com/Speykious/cve-rs/blob/main/LICENSE)
