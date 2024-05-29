@@ -3,8 +3,7 @@ Togbe is a very experimental web crawler library in rust.
 Documentation coming soon.
 
 
-# How to run
-Clone or fork and clone the project.
+# How to use
 Install rust ([From rust-lang.org](https://www.rust-lang.org/tools/install)).
 
 
@@ -36,4 +35,4 @@ The result will be in `output` folder.
 See the example folder for more use case.
 
 # Project goals and non-goals:
-Documentation coming soon.
+Coming soon.
