@@ -1,17 +1,39 @@
 # Togbe
-Togbe is a very experimental web crawler build in rust. Use it at your own risk.
+Togbe is a very experimental web crawler library in rust.  
+Documentation coming soon.
 
-# How it works 
-There is a vec of initial url in the `main.rs` file to crawl. The result of each page is processed and parsed and output the json file in ouput folder. 
-You can then do whatever you want with the json data, either send to another service or save in database.
 
 # How to run
 Clone or fork and clone the project.
 Install rust ([From rust-lang.org](https://www.rust-lang.org/tools/install)).
-From the root directory, run 
+
+
+Download the project. In your `Cargo.toml` file:
 ```
-cargo run
+[dependencies]
+tokio = { version = "1.36.0", features = ["full"] }
+togbe = {git = "https://github.com/Grenier-Du-Dev/togbe" ,branch = "main"}
 ```
 
+In your `main.rs` file
+```
+use togbe::crawl;
+
+
+#[tokio::main]
+async fn main() {
+   
+    // initial urls to fetch pages
+    let seed_urls = vec!["https://www.grenierdudev.com/"];
+    let crawl_depth = 3;
+    let concurrent_requests = 10;
+    crawl(seed_urls, crawl_depth, concurrent_requests).await;
+}
+ 
+```
+
+The result will be in `output` folder.
+See the example folder for more use case.
+
 # Project goals and non-goals:
-N/A
+Documentation coming soon.
